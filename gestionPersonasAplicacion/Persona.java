@@ -58,21 +58,7 @@ public class Persona {
 			return anio - 1;
 	}
 
-	public static String generarDni() {
-		char letras[] = { 'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H',
-				'L', 'C', 'K', 'E' };
-		Random r = new Random();
-		int num = r.nextInt(99999999);
 
-		String dni = String.valueOf(num);
-
-		while (dni.length() < 8)
-			dni = "0" + dni;
-
-		dni = dni + (letras[num % 23]);
-
-		return dni;
-	}
 
 	public String getDni() {
 		return dni;
