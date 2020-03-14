@@ -32,7 +32,7 @@ public class GestionPersonas {
 	}
 
 	public static int buscarDni(String dni) {
-		String dni2 = gestionPersonasAplicacion.Persona.validarDNI(dni);
+		String dni2 = Persona.validarDNI(dni);
 		for (int i = 0; i < al.size(); i++)
 			if (al.get(i).getDni().equalsIgnoreCase(dni2)) {
 				return i;
